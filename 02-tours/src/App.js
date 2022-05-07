@@ -16,7 +16,9 @@ function App() {
   console.log(tours);
  };
 
- 
+ useEffect(() => {
+   fetchTours();
+ })
  if(loading) {
    return (
    <main>

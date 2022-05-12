@@ -8,7 +8,7 @@ function App() {
   const [caregories, setCategories] = useState([]);
 
   
-  const allCategories = new Set(items.map((item) => item.category));
+  const allCategories = ['all', ...new Set(items.map((item) => item.category))];
   console.log(allCategories);
 
   const filterItems = (category) => {

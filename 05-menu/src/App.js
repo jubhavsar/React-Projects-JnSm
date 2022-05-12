@@ -8,11 +8,9 @@ function App() {
   const [caregories, setCategories] = useState([]);
 
   const filterItems = (category) => {
-   const newItems = items.filter((item) => {
-    item.category === category;
-    setMenuItems(newItems);
+   const newItems = items.filter((item) => item.category === category)
+     setMenuItems(newItems);
 
-   })
   }
 
   return (

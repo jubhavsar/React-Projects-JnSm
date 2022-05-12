@@ -22,8 +22,8 @@ function App() {
           <h3>Our menu</h3>
           <div className="underline"></div>
         </div>
-        <Categories />
-        <Menu items={menuItems}/>
+        <Categories filterItems={filterItems} />
+        <Menu items={menuItems} />
       </section>
     </main>
   );

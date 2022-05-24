@@ -29,7 +29,23 @@ function App() {
     )
   }
   const { title, company, dates, duties } = jobs[value];
-  return <h2>Jobs</h2>
+  return (
+    <section className='section'>
+      <div className="title">
+        <h2>experience</h2>  
+        <div className="underline"></div>
+      </div>
+      <div className='jobs-center'>
+        {/*btn container*/}
+        {/*job info*/}
+        <article className='job-info'>
+          <h3>{title}</h3>
+          <h4>{company}</h4>
+          <p className='job-date'>{dates}</p>
+        </article>
+      </div>
+    </section>
+  );
 }
 
 export default App

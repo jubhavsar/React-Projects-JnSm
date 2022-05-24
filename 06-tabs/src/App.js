@@ -11,14 +11,24 @@ function App() {
   const fetchJobs = async () => {
     const response = await fetch(url);
     const newjobs = await response.json();
-    console.log(newjobs);
+    
+    setJobs(newjobs);
+    setLoading(false);
   }
 
   // invoke fetchJobs function
   useEffect(() => {
     fetchJobs();
   }, []);
-  return <h2>tabs project setup</h2>
+
+  if(loading) {
+    return (
+    <section className='section loading'>
+      <h1>Loading...</h1>
+    </section>
+    )
+  }
+  return <h2>Jobs</h2>
 }
 
 export default App

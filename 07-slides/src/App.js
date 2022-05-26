@@ -16,8 +16,13 @@ function App() {
       <div className="section-center">
         {people.map((personData, personIndex) => {
           const { id, name, title, image, quote } = personData;
+          
+          let position = 'nextSlide';
+          if(personIndex === index) {
+            position = 'activeSlide';
+          }
           return (
-            <article key={id}>
+            <article className={position} key={id}>
               <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>

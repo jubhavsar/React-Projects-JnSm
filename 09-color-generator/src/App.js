@@ -8,9 +8,11 @@ const[color,setColor] = useState('');
 const[error,setError] = useState(false);
 const[list,setList] = useState([]);
 
+
 const handleSubmit = (e) => {
   e.preventDefault();
-  console.log("Hi");
+  let colors = new Values(color).all(10);
+  console.log(colors);
 }
   return (
     <>
@@ -21,7 +23,7 @@ const handleSubmit = (e) => {
       type="text" 
       value={color} 
       placeholder="#"
-      onChange={(e) => e.target.value} />
+      onChange={(e) => setColor(e.target.value)} />
       <button className='btn' type='submit'>submit</button>
     </form>
     </section>

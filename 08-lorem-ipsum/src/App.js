@@ -6,7 +6,9 @@ function App() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    setText(data);
+    let amount = parseInt(count);
+    console.log(amount);
+    setText(data.slice(0, amount));
   }
   return (
   <section className='section-center'>
@@ -18,12 +20,12 @@ function App() {
         id='amount' 
         name='amount' 
         value={count} 
-        onChange={(e) => e.target.value}/>
+        onChange={(e) => setCount(e.target.value)}/>
       <button className='btn' type='submit'>generate</button>
     </form>
     <article className='lorel-text'>
-     {text.map((data) => {
-      return <p>{data}</p>
+     {text.map((data, index) => {
+      return <p key={index}>{data}</p>
 
      })}
     </article>

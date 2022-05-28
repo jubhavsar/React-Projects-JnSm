@@ -22,10 +22,10 @@ function App() {
       <button className='btn' type='submit'>generate</button>
     </form>
     <article className='lorel-text'>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Ipsa incidunt eum mollitia, iure minima quod.</p>  
-     <p>Eligendi doloribus inventore perferendis officia, 
-      tempore commodi magni ad quaerat qui, minus ipsa aperiam sed?</p> 
+     {text.map((data) => {
+      return <p>{data}</p>
+
+     })}
     </article>
   </section>
     )

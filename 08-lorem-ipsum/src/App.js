@@ -21,6 +21,12 @@ function App() {
         onChange={(e) => e.target.value}/>
       <button className='btn' type='submit'>generate</button>
     </form>
+    <article className='lorel-text'>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Ipsa incidunt eum mollitia, iure minima quod.</p>  
+     <p>Eligendi doloribus inventore perferendis officia, 
+      tempore commodi magni ad quaerat qui, minus ipsa aperiam sed?</p> 
+    </article>
   </section>
     )
 }

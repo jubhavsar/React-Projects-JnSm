@@ -7,6 +7,14 @@ const SingleColor = ({ rgb, index, weight, hexColor }) => {
   // to get hex color
   // const hex = rgbToHex(...rgb);
   const hexValue = `#${hexColor}`;
+  
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAlert(false)
+    }, 3000)
+    return () => clearTimeout(timeout)
+  }, [alert])
+
   return (
     <article 
     className={`color ${index > 10 && 'color-light'}`} 

@@ -11,6 +11,7 @@ const SingleColor = ({ rgb, index, weight, hexColor }) => {
     <article className={`color ${index > 10 && 'color-light'}`} style={{backgroundColor:`rgb(${bcg})` }}>
       <p className='percent-value'>{weight}%</p>
       <p className='color-value'>{hexValue}</p>
+      {alert && <p className='alert'>copied to clipboard</p>}
     </article>
   )
 }

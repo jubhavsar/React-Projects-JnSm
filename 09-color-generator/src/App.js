@@ -36,7 +36,7 @@ const handleSubmit = (e) => {
       </section>
       <section className='colors'>
         {list.map((color, index) => {
-          console.log(color);
+   
           return <SingleColor key={index} index={index} {...color}/>
 
         })}

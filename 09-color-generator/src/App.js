@@ -17,7 +17,12 @@ const handleSubmit = (e) => {
     <section className='container'>
     <h3>color generator</h3>
     <form onSubmit={handleSubmit}>
-      <input type="text" value={color}/>
+      <input 
+      type="text" 
+      value={color} 
+      placeholder="#"
+      onChange={(e) => e.target.value} />
+      <button className='btn' type='submit'>submit</button>
     </form>
     </section>
     <section className='colors'>

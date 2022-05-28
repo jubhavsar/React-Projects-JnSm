@@ -16,6 +16,9 @@ const handleSubmit = (e) => {
     <>
     <section className='container'>
     <h3>color generator</h3>
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={color}/>
+    </form>
     </section>
     <section className='colors'>
     <h3>list goes here</h3>

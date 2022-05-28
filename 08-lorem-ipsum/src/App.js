@@ -5,7 +5,9 @@ function App() {
   const [text, setText] = useState([]);
   
   return (
-  <h2>lorem ipsum project setup</h2>
+  <section className='section-center'>
+    <h3>Tired of boring lorem ipsome</h3>
+  </section>
     )
 }
 

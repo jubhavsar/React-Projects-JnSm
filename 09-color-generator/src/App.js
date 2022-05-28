@@ -8,7 +8,10 @@ const[color,setColor] = useState('');
 const[error,setError] = useState(false);
 const[list,setList] = useState([]);
 
-
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("Hi");
+}
   return <h2>color generator project</h2>
 }
 

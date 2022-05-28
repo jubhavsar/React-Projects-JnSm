@@ -35,7 +35,11 @@ const handleSubmit = (e) => {
         </form>
       </section>
       <section className='colors'>
-        <h3>list goes here</h3>
+        {list.map((color, index) => {
+          console.log(color);
+          return <SingleColor key={index} index={index} {...color}/>
+
+        })}
       </section>
     </>
   )
